@@ -11,7 +11,7 @@ def start(update, context):
     if update.message.chat.type == "private" :
         sendMessage(f"<b>Hɪ👋</b> <b>{update.message.chat.first_name}</b>. 🍀 <b>Wᴇʟᴄᴏᴍᴇ Tᴏ ➼ @MortalViking 🌋 G-Dʀɪᴠᴇ/Tᴇᴀᴍ Dʀɪᴠᴇ Fɪʟᴇs Sᴇᴀʀᴄʜ Bᴏᴛ🌀</b>", context.bot, update)
     else :
-        sendMessage("➼ I'ᴍ Aʟɪᴠᴇ🤭 :)", context.bot, update)
+        sendMessage("<b>➼ I'ᴍ Aʟɪᴠᴇ🤭 :)</b>", context.bot, update)
 
 @run_async
 def log(update, context):
