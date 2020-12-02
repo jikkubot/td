@@ -11,7 +11,7 @@ def start(update, context):
     if update.message.chat.type == "private" :
         sendMessage(f"<b>Hi👋</b> <b>{update.message.chat.first_name}</b>. Welcome to <b>@MortalViking G-Drive/Team Drive Files Search Bot</b>", context.bot, update)
     else :
-        sendMessage("I'm alive :)", context.bot, update)
+        sendMessage("I'm Alive🤭 :)", context.bot, update)
 
 @run_async
 def log(update, context):
