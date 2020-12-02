@@ -12,10 +12,10 @@ def list_drive(update,context):
         if "'"in search:
             search = search.replace("'", "\\'")
     except IndexError:
-        sendMessage('<b>Bᴏᴛ: Sᴇɴᴅ ᴀ Fɪʟᴇ Kᴇʏᴡᴏʀᴅ Tᴏ Sᴇᴀʀᴄʜ, Aʟᴏɴɢ Wɪᴛʜ /search Cᴏᴍᴍᴀɴᴅ</b>', context.bot, update)
+        sendMessage('<b>⛽Bᴏᴛ: ➼Sᴇɴᴅ ᴀ Fɪʟᴇ Kᴇʏᴡᴏʀᴅ Tᴏ Sᴇᴀʀᴄʜ, Aʟᴏɴɢ Wɪᴛʜ /search Cᴏᴍᴍᴀɴᴅ</b>', context.bot, update)
         return
         
-    reply = sendMessage('<b>Sᴇᴀʀᴄʜɪɴɢ...Pʟᴇᴀsᴇ Wᴀɪᴛ!</b>', context.bot, update)
+    reply = sendMessage('<b>🔍Sᴇᴀʀᴄʜɪɴɢ...Pʟᴇᴀsᴇ Wᴀɪᴛ!</b>', context.bot, update)
 
     LOGGER.info(f"Searching: {search}")
         
