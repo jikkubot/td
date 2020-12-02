@@ -17,9 +17,9 @@ def authorize(update,context):
             if chat_id not in AUTHORIZED_CHATS:
                 file.write(f'{chat_id}\n')
                 AUTHORIZED_CHATS.add(chat_id)
-                msg = 'Cʜᴀᴛ Aᴜᴛʜᴏʀɪᴢᴇᴅ!'
+                msg = '<b>Cʜᴀᴛ Aᴜᴛʜᴏʀɪᴢᴇᴅ!</b>'
             else:
-                msg = 'Usᴇʀ Aʟʀᴇᴀᴅʏ Aᴜᴛʜᴏʀɪᴢᴇᴅ!'
+                msg = '<b>Usᴇʀ Aʟʀᴇᴀᴅʏ Aᴜᴛʜᴏʀɪᴢᴇᴅ!</b>'
         else:
             if reply_message is None:
                 # Trying to authorize a chat
@@ -27,18 +27,18 @@ def authorize(update,context):
                 if chat_id not in AUTHORIZED_CHATS:
                     file.write(f'{chat_id}\n')
                     AUTHORIZED_CHATS.add(chat_id)
-                    msg = 'Cʜᴀᴛ Aᴜᴛʜᴏʀɪᴢᴇᴅ!'
+                    msg = '<b>Cʜᴀᴛ Aᴜᴛʜᴏʀɪᴢᴇᴅ!</b>'
                 else:
-                    msg = 'Aʟʀᴇᴀᴅʏ Aᴜᴛʜᴏʀɪᴢᴇᴅ Cʜᴀᴛ!'
+                    msg = '<b>Aʟʀᴇᴀᴅʏ Aᴜᴛʜᴏʀɪᴢᴇᴅ Cʜᴀᴛ!</b>'
             else:
                 # Trying to authorize someone in specific
                 user_id = reply_message.from_user.id
                 if user_id not in AUTHORIZED_CHATS:
                     file.write(f'{user_id}\n')
                     AUTHORIZED_CHATS.add(user_id)
-                    msg = 'Pᴇʀsᴏɴ Aᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!'
+                    msg = '<b>Pᴇʀsᴏɴ Aᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!</b>'
                 else:
-                    msg = 'Pᴇʀsᴏɴ Aʟʀᴇᴀᴅʏ Aᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!'
+                    msg = '<b>Pᴇʀsᴏɴ Aʟʀᴇᴀᴅʏ Aᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!</b>'
         sendMessage(msg, context.bot, update)
 
 
@@ -50,26 +50,26 @@ def unauthorize(update,context):
             chat_id = int(message_[1])
             if chat_id in AUTHORIZED_CHATS:
                 AUTHORIZED_CHATS.remove(chat_id)
-                msg = 'Cʜᴀᴛ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ!'
+                msg = '<b>Cʜᴀᴛ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ!</b>'
             else:
-                msg = 'Usᴇʀ Aʟʀᴇᴀᴅʏ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ!'
+                msg = '<b>Usᴇʀ Aʟʀᴇᴀᴅʏ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ!</b>'
     else:
         if reply_message is None:
             # Trying to unauthorize a chat
             chat_id = update.effective_chat.id
             if chat_id in AUTHORIZED_CHATS:
                 AUTHORIZED_CHATS.remove(chat_id)
-                msg = 'Cʜᴀᴛ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ!'
+                msg = '<b>Cʜᴀᴛ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ!</b>'
             else:
-                msg = 'Aʟʀᴇᴀᴅʏ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ Cʜᴀᴛ!'
+                msg = '<b>Aʟʀᴇᴀᴅʏ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ Cʜᴀᴛ!</b>'
         else:
             # Trying to authorize someone in specific
             user_id = reply_message.from_user.id
             if user_id in AUTHORIZED_CHATS:
                 AUTHORIZED_CHATS.remove(user_id)
-                msg = 'Pᴇʀsᴏɴ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!'
+                msg = '<b>Pᴇʀsᴏɴ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!</b>'
             else:
-                msg = 'Pᴇʀsᴏɴ Aʟʀᴇᴀᴅʏ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!'
+                msg = '<b>Pᴇʀsᴏɴ Aʟʀᴇᴀᴅʏ UɴAᴜᴛʜᴏʀɪᴢᴇᴅ Tᴏ Usᴇ Tʜᴇ Bᴏᴛ!</b>'
     with open('authorized_chats.txt', 'a') as file:
         file.truncate(0)
         for i in AUTHORIZED_CHATS:
