@@ -30,7 +30,7 @@ count = 1
 while count <= num :
     print(f"\n        > DRIVE/FOLDER - {count}\n")
     name  = input("    Enter Drive/Folder NAME  (anything)     : MirrorrZ")
-    id    = input("    Enter Drive/Folder ID                   : 0AHPGO-t28jJ0Uk9PVA")
+    id    = input("    Enter Drive/Folder ID                   : 1WASm7eEbOrhwoPnYTl8hVDOIMaJIfG9g")
     index = input("    Enter Drive/Folder INDEX URL (optional) : https://td.thyvikings.workers.dev/0:/MirrorBot%20Uploads")
     if not name or not id:
         print("\n\n        ERROR : Dont leave the name/id without filling.")
