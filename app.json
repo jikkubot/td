@@ -1,5 +1,5 @@
 {
-    "name": "Drive-X-Search-Bot",
+    "name": "TDSearchBot",
     "description": "Telegram Bot Which Search Files From Our G-Drive",
     "logo": "https://telegra.ph/file/e15e9ac9c5885b015e3ab.jpg",
     "keywords": [
@@ -8,9 +8,9 @@
       "drive",
       "python"
     ],
-    "repository": "https://github.com/usmanmughalji/Drive-X-Search-Bot.git",
-    "website": "https://github.com/usmanmughalji/Drive-X-Search-Bot/tree/master",
-    "success_url": "https://github.com/usmanmughalji/Drive-X-Search-Bot/blob/master/README.md",
+    "repository": "https://github.com/mr-U-I1/TDSearchBot.git",
+    "website": "https://github.com/mr-U-I1/TDSearchBot/tree/master",
+    "success_url": "https://github.com/mr-U-I1/TDSearchBot/blob/master/README.md",
     "stack": "container",
     "env": {
       "ENV": {
