@@ -1,5 +1,5 @@
 ## Deploy Here
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/mr-U-I1/TDSearchBot)
 
 # What is this repo about?
 This is a telegram bot writen in python for searching files in Drive.
