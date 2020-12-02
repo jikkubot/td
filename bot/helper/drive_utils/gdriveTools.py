@@ -142,7 +142,7 @@ class GoogleDriveHelper:
             self.telegraph_content.append(msg)
 
         if len(self.telegraph_content) == 0:
-            return "<b>Nᴏ Rᴇsᴜʟᴛs Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Fɪʟᴇ Nᴀᴍᴇ Kᴇʏᴡᴏʀᴅ:(</b>", None
+            return "<b>➼Nᴏ Rᴇsᴜʟᴛs Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Fɪʟᴇ Nᴀᴍᴇ Kᴇʏᴡᴏʀᴅ :(</b>", None
 
         for content in self.telegraph_content :
             self.path.append(telegra_ph.create_page(title = 'Vɪᴋɪɴɢs Sᴇᴀʀᴄʜ Iɴᴅᴇx',
