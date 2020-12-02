@@ -1,4 +1,3 @@
-#Add Owner ID or Group Chat IDs, Per Line.
 -1001310820645
 1238571337
 779328316
