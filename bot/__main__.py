@@ -9,9 +9,9 @@ from .modules import authorize, list
 def start(update, context):
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id,update.message.chat.username,update.message.text))
     if update.message.chat.type == "private" :
-        sendMessage(f"Hɪ👋 <b>{update.message.chat.first_name}</b>. Wᴇʟᴄᴏᴍᴇ Tᴏ @MortalViking G-Dʀɪᴠᴇ/Tᴇᴀᴍ Dʀɪᴠᴇ Fɪʟᴇs Sᴇᴀʀᴄʜ Bᴏᴛ", context.bot, update)
+        sendMessage(f"<b>Hɪ👋</b> <b>{update.message.chat.first_name}</b>. 🍀 <b>Wᴇʟᴄᴏᴍᴇ Tᴏ ➼ @MortalViking 🌋 G-Dʀɪᴠᴇ/Tᴇᴀᴍ Dʀɪᴠᴇ Fɪʟᴇs Sᴇᴀʀᴄʜ Bᴏᴛ🌀</b>", context.bot, update)
     else :
-        sendMessage("I'ᴍ Aʟɪᴠᴇ🤭 :)", context.bot, update)
+        sendMessage("➼ I'ᴍ Aʟɪᴠᴇ🤭 :)", context.bot, update)
 
 @run_async
 def log(update, context):
