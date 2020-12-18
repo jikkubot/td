@@ -19,7 +19,7 @@ def log(update, context):
 
 def main():
 
-    start_handler = CommandHandler(BotCommands.StartCommand, start)
+    start_handler = CommandHandler(BotCommands.StartCommand, start, filters=CustomFilters.authorized_chat | CustomFilters.authorized_user)
     log_handler = CommandHandler(BotCommands.LogCommand, log, filters=CustomFilters.owner_filter)
 
     dispatcher.add_handler(start_handler)
