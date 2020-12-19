@@ -29,9 +29,9 @@ num = int(input("    How Many Drive/Folder You Likes To Add : "))
 count = 1
 while count <= num :
     print(f"\n        > DRIVE/FOLDER - {count}\n")
-    name  = input("    Enter Drive/Folder NAME  (anything)     : Mirrorrz")
-    id    = input("    Enter Drive/Folder ID                   : 1WASm7eEbOrhwoPnYTl8hVDOIMaJIfG9g")
-    index = input("    Enter Drive/Folder INDEX URL (optional) : https://td.thyvikings.workers.dev/0:/MirrorBot%20Uploads")
+    name  = input("    Enter Drive/Folder NAME  (anything)     : 𝐌𝐢𝐫𝐫𝐨𝐫𝐳 🧲⛓️🔗")
+    id    = input("    Enter Drive/Folder ID                   : 0AF9TjS73RJmIUk9PVA")
+    index = input("    Enter Drive/Folder INDEX URL (optional) : https://my.fcgdrive.workers.dev")
     if not name or not id:
         print("\n\n        ERROR : Dont leave the name/id without filling.")
         exit(1) 
