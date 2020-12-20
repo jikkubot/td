@@ -29,7 +29,7 @@ num = int(input("    How Many Drive/Folder You Likes To Add : "))
 count = 1
 while count <= num :
     print(f"\n        > DRIVE/FOLDER - {count}\n")
-    name  = input("    Enter Drive/Folder NAME  (anything)     : 𝐌𝐢𝐫𝐫𝐨𝐫𝐳 🧲⛓️🔗")
+    name  = input("    Enter Drive/Folder NAME  (anything)     : MirrorAll")
     id    = input("    Enter Drive/Folder ID                   : 0AF9TjS73RJmIUk9PVA")
     index = input("    Enter Drive/Folder INDEX URL (optional) : https://my.fcgdrive.workers.dev")
     if not name or not id:
