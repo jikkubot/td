@@ -93,7 +93,7 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Nᴇxᴛ👉</a></b>'
                     nxt_page += 1
             telegra_ph.edit_page(path = self.path[prev_page],
-                                 title = '@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 Sᴇᴀʀᴄʜ Iɴᴅᴇx',
+                                 title = '☁️ @𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛 𝗜𝗡𝗗𝗘𝗫 ☁️',
                                  html_content=content)
         return
 
@@ -113,7 +113,7 @@ class GoogleDriveHelper:
             INDEX += 1          
             if response:
                 if add_title_msg == True:
-                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br>@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟<br><br>'
+                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br><a href="https://groups.google.com/g/fc_gdrive">💖 JOIN TEAM DRIVE 💖</a><br><br>'
                     add_title_msg = False
                 msg += f"╾────────────╼<br><b>{DRIVE_NAME[INDEX]}</b><br>╾────────────╼<br>"
                 for file in response:
