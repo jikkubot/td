@@ -93,7 +93,7 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Nᴇxᴛ👉</a></b>'
                     nxt_page += 1
             telegra_ph.edit_page(path = self.path[prev_page],
-                                 title = '@MirrorAll Sᴇᴀʀᴄʜ Iɴᴅᴇx',
+                                 title = '@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 Sᴇᴀʀᴄʜ Iɴᴅᴇx',
                                  html_content=content)
         return
 
@@ -113,24 +113,24 @@ class GoogleDriveHelper:
             INDEX += 1          
             if response:
                 if add_title_msg == True:
-                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br>@MirrorAll<br><br>'
+                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br>@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟<br><br>'
                     add_title_msg = False
                 msg += f"╾────────────╼<br><b>{DRIVE_NAME[INDEX]}</b><br>╾────────────╼<br>"
                 for file in response:
                     if file.get('mimeType') == "application/vnd.google-apps.folder":  # Detect Whether Current Entity is a Folder or File.
                         msg += f"🗃️<code>{file.get('name')}</code> <b>[Folder]</b><br>" \
-                               f"<b><a href='https://drive.google.com/drive/folders/{file.get('id')}'>G-Dʀɪᴠᴇ Lɪɴᴋ</a></b>"
+                               f"<b><a href='https://drive.google.com/drive/folders/{file.get('id')}'>🌎G-Dʀɪᴠᴇ Lɪɴᴋ</a></b>"
                         if INDEX_URL[INDEX] is not None:
                             url_path = requests.utils.quote(f'{file.get("name")}')
                             url = f'{INDEX_URL[INDEX]}/{url_path}/'
-                            msg += f'<b> | <a href="{url}">Iɴᴅᴇx Lɪɴᴋ</a></b>'
+                            msg += f'<b> | <a href="{url}">📇Iɴᴅᴇx Lɪɴᴋ</a></b>'
                     else:
                         msg += f"🌀<code>{file.get('name')}</code> <b>({self.get_readable_file_size(file.get('size'))})</b><br>" \
-                               f"<b><a href='https://drive.google.com/uc?id={file.get('id')}&export=download'>G-Dʀɪᴠᴇ Lɪɴᴋ</a></b>"
+                               f"<b><a href='https://drive.google.com/uc?id={file.get('id')}&export=download'>🌎G-Dʀɪᴠᴇ Lɪɴᴋ</a></b>"
                         if INDEX_URL[INDEX] is not None:
                             url_path = requests.utils.quote(f'{file.get("name")}')
                             url = f'{INDEX_URL[INDEX]}/{url_path}'
-                            msg += f'<b> | <a href="{url}">Iɴᴅᴇx Lɪɴᴋ</a></b>'
+                            msg += f'<b> | <a href="{url}">📇Iɴᴅᴇx Lɪɴᴋ</a></b>'
                     msg += '<br><br>'
                     content_count += 1
                     if content_count == TELEGRAPHLIMIT :
@@ -145,7 +145,7 @@ class GoogleDriveHelper:
             return "<b>➼Nᴏ Rᴇsᴜʟᴛs Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Fɪʟᴇ Nᴀᴍᴇ Kᴇʏᴡᴏʀᴅ :(</b>", None
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = '@MirrorAll Sᴇᴀʀᴄʜ Iɴᴅᴇx',
+            self.path.append(telegra_ph.create_page(title = '@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 Sᴇᴀʀᴄʜ Iɴᴅᴇx',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
