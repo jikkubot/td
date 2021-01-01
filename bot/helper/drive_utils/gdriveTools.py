@@ -113,7 +113,7 @@ class GoogleDriveHelper:
             INDEX += 1          
             if response:
                 if add_title_msg == True:
-                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br><a href="https://groups.google.com/g/fc_gdrive">💖 JOIN TEAM DRIVE 💖</a> ||<a href="https://groups.google.com/g/fc_links">📥 JOIN MOVIE LINKS 📥</a><br><br>'
+                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br><b><a href="https://groups.google.com/g/fc_gdrive">💖 JOIN TEAM DRIVE 💖</a></b> ||<b><a href="https://telegram.dog/fc_links">📥 JOIN MOVIE LINKS 📥</a></b><br><br>'
                     add_title_msg = False
                 msg += f"╾────────────╼<br><b>{DRIVE_NAME[INDEX]}</b><br>╾────────────╼<br>"
                 for file in response:
