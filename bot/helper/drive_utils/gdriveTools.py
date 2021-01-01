@@ -93,7 +93,7 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Nᴇxᴛ👉</a></b>'
                     nxt_page += 1
             telegra_ph.edit_page(path = self.path[prev_page],
-                                 title = '☁️ @𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛 𝗜𝗡𝗗𝗘𝗫 ☁️',
+                                 title = '☁️@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛☁️',
                                  html_content=content)
         return
 
@@ -145,7 +145,7 @@ class GoogleDriveHelper:
             return "<b>➼Nᴏ Rᴇsᴜʟᴛs Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Fɪʟᴇ Nᴀᴍᴇ Kᴇʏᴡᴏʀᴅ :(</b>", None
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = '☁️ @𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛 𝗜𝗡𝗗𝗘𝗫 ☁️',
+            self.path.append(telegra_ph.create_page(title = '☁️@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛☁️',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
