@@ -145,7 +145,7 @@ class GoogleDriveHelper:
             return "<b>➼Nᴏ Rᴇsᴜʟᴛs Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Fɪʟᴇ Nᴀᴍᴇ Kᴇʏᴡᴏʀᴅ :(</b>", None
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = '@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 Sᴇᴀʀᴄʜ Iɴᴅᴇx',
+            self.path.append(telegra_ph.create_page(title = '☁️ @𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛 𝗜𝗡𝗗𝗘𝗫 ☁️',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
