@@ -93,7 +93,7 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Nᴇxᴛ👉</a></b>'
                     nxt_page += 1
             telegra_ph.edit_page(path = self.path[prev_page],
-                                 title = '☁️@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛☁️',
+                                 title = '☁️@MirrorAll Search☁️',
                                  html_content=content)
         return
 
@@ -113,7 +113,7 @@ class GoogleDriveHelper:
             INDEX += 1          
             if response:
                 if add_title_msg == True:
-                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br><a href="https://groups.google.com/g/fc_gdrive">💖 JOIN TEAM DRIVE 💖</a><br><br>'
+                    msg = f'<h3>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h3><br><a href="https://groups.google.com/g/fc_gdrive">💖 JOIN TEAM DRIVE 💖</a> ||<a href="https://groups.google.com/g/fc_links">📥 JOIN MOVIE LINKS 📥</a><br><br>'
                     add_title_msg = False
                 msg += f"╾────────────╼<br><b>{DRIVE_NAME[INDEX]}</b><br>╾────────────╼<br>"
                 for file in response:
@@ -145,7 +145,7 @@ class GoogleDriveHelper:
             return "<b>➼Nᴏ Rᴇsᴜʟᴛs Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Fɪʟᴇ Nᴀᴍᴇ Kᴇʏᴡᴏʀᴅ :(</b>", None
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = '☁️@𝗠𝗜𝗥𝗥𝗢𝗥𝗔𝗟𝗟 𝗦𝗘𝗔𝗥𝗖𝗛☁️',
+            self.path.append(telegra_ph.create_page(title = '☁️@MirrorAll Search☁️',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
