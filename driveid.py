@@ -30,7 +30,7 @@ count = 1
 while count <= num :
     print(f"\n        > DRIVE/FOLDER - {count}\n")
     name  = input("    Enter Drive/Folder NAME  (anything)     : MirrorAll")
-    id    = input("    Enter Drive/Folder ID                   : 0AF9TjS73RJmIUk9PVA")
+    id    = input("    Enter Drive/Folder ID                   : 0AI9V5UCXrk6NUk9PVA")
     index = input("    Enter Drive/Folder INDEX URL (optional) : https://my.fcgdrive.workers.dev")
     if not name or not id:
         print("\n\n        ERROR : Dont leave the name/id without filling.")
